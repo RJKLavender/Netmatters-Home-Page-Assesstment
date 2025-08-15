@@ -1,5 +1,7 @@
 body {
 margin: 0;
+font-family: $Poppins-R,sans-serif;
+letter-spacing: .4px;
 
 }
 
@@ -14,15 +16,19 @@ box-sizing: border-box;
     padding-left: 15px;
     padding-right: 15px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $small) {
         width: 750px;
     }
-     @media (min-width: 992px) {
+     @media (min-width: $medium) {
         width: 970px;
     }
-     @media (min-width: 1260px) {
+     @media (min-width: $large) {
         width: 1200px;
     }
 
 
+}
+
+a {
+    cursor: pointer;
 }
