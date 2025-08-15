@@ -1,0 +1,38 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss",
+		"../scss/utilities/_index.scss",
+		"../scss/utilities/_config.scss",
+		"../scss/utilities/_fonts.scss",
+		"../scss/utilities/_functions.scss",
+		"../scss/utilities/_mixins.scss",
+		"../scss/base/_index.scss",
+		"../scss/base/_base.scss",
+		"../scss/base/_reset.scss",
+		"../scss/containers/_index.scss",
+		"../scss/containers/_footer.scss",
+		"../scss/layout/_index.scss",
+		"../scss/layout/_extends.scss",
+		"../scss/states/_index.scss"
+	],
+	"sourcesContent": [
+		"\r\n// Utilities\r\n@import \"utilities/index\";\r\n\r\n// Base Styles\r\n@import 'base/index';\r\n\r\n// Containers\r\n@import 'containers/index';\r\n\r\n// Layout Styles\r\n@import \"layout/index\";\r\n\r\n// States\r\n@import \"states/index\";",
+		"// Config Details\r\n@import 'config';\r\n\r\n// Fonts\r\n@import 'fonts';\r\n\r\n// Functions\r\n@import 'functions';\r\n\r\n// Mixins\r\n@import 'mixins';\r\n\r\n",
+		"",
+		"",
+		"",
+		"",
+		"// Base Styles\r\n@import 'base';\r\n\r\n//Normalise/Reset\r\n@import 'reset'",
+		"body {\r\nmargin: 0;\r\n\r\n}\r\n\r\n* {\r\nbox-sizing: border-box;\r\n\r\n}\r\n\r\n.container {\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    padding-left: 15px;\r\n    padding-right: 15px;\r\n\r\n    @media (min-width: 768px) {\r\n        width: 750px;\r\n    }\r\n     @media (min-width: 992px) {\r\n        width: 970px;\r\n    }\r\n     @media (min-width: 1260px) {\r\n        width: 1200px;\r\n    }\r\n\r\n\r\n}",
+		"",
+		"// Footer\r\n@import 'footer';",
+		"footer {\r\nbackground-color: #324544;\r\ncolor: #fff;\r\npadding: 30px 0 0;\r\nposition: relative;\r\n\r\n.footer-row {\r\ndisplay:flex;\r\nflex-wrap:wrap;\r\n\r\n    .footer-menu {\r\n        flex: 100%;\r\n        margin-bottom: 30px;\r\n\r\n        @media (min-width:768px) {\r\n            flex: 50%;\r\n            }\r\n\r\n         @media (min-width:992px) {\r\n            flex: 25%;\r\n            }\r\n\r\n          @media (min-width:1260px) {\r\n            margin-bottom: 40px;\r\n            }\r\n\r\n          h4 {\r\n            text-transform: uppercase;\r\n            font-size: 1rem;\r\n            margin-bottom: 26px;\r\n            }\r\n  \r\n        }\r\n    }\r\n}",
+		"// Exends\r\n@import 'extends';",
+		"",
+		""
+	],
+	"names": [],
+	"mappings": ";AOAA,AAAA,IAAI,CAAC;EACL,MAAM,EAAE,CAAC;CAER;;;AAED,AAAA,CAAC,CAAC;EACF,UAAU,EAAE,UAAU;CAErB;;;AAED,AAAA,UAAU,CAAC;EACP,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;CAatB;;AAXG,MAAM,EAAE,SAAS,EAAE,KAAK;;EAN5B,AAAA,UAAU,CAAC;IAOH,KAAK,EAAE,KAAK;GAUnB;;;AARI,MAAM,EAAE,SAAS,EAAE,KAAK;;EAT7B,AAAA,UAAU,CAAC;IAUH,KAAK,EAAE,KAAK;GAOnB;;;AALI,MAAM,EAAE,SAAS,EAAE,MAAM;;EAZ9B,AAAA,UAAU,CAAC;IAaH,KAAK,EAAE,MAAM;GAIpB;;;;AG3BD,AAAA,MAAM,CAAC;EACP,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,QAAQ;EACjB,QAAQ,EAAE,QAAQ;CA8BjB;;;AAlCD,AAMA,MANM,CAMN,WAAW,CAAC;EACZ,OAAO,EAAC,IAAI;EACZ,SAAS,EAAC,IAAI;CAyBT;;;AAjCL,AAUI,MAVE,CAMN,WAAW,CAIP,YAAY,CAAC;EACT,IAAI,EAAE,IAAI;EACV,aAAa,EAAE,IAAI;CAoBlB;;AAlBD,MAAM,EAAE,SAAS,EAAE,KAAK;;EAdhC,AAUI,MAVE,CAMN,WAAW,CAIP,YAAY,CAAC;IAKL,IAAI,EAAE,GAAG;GAiBZ;;;AAdA,MAAM,EAAE,SAAS,EAAE,KAAK;;EAlBjC,AAUI,MAVE,CAMN,WAAW,CAIP,YAAY,CAAC;IASL,IAAI,EAAE,GAAG;GAaZ;;;AAVC,MAAM,EAAE,SAAS,EAAE,MAAM;;EAtBnC,AAUI,MAVE,CAMN,WAAW,CAIP,YAAY,CAAC;IAaL,aAAa,EAAE,IAAI;GAStB;;;;AAhCT,AA0BU,MA1BJ,CAMN,WAAW,CAIP,YAAY,CAgBN,EAAE,CAAC;EACD,cAAc,EAAE,SAAS;EACzB,SAAS,EAAE,IAAI;EACf,aAAa,EAAE,IAAI;CAClB"
+}

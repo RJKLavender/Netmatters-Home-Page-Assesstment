@@ -1,0 +1,88 @@
+/* line 1, D:/Assement NHP/scss/base/_base.scss */
+body {
+  margin: 0;
+}
+
+/* line 6, D:/Assement NHP/scss/base/_base.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 11, D:/Assement NHP/scss/base/_base.scss */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  /* line 11, D:/Assement NHP/scss/base/_base.scss */
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 11, D:/Assement NHP/scss/base/_base.scss */
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 11, D:/Assement NHP/scss/base/_base.scss */
+  .container {
+    width: 1200px;
+  }
+}
+
+/* line 1, D:/Assement NHP/scss/containers/_footer.scss */
+footer {
+  background-color: #324544;
+  color: #fff;
+  padding: 30px 0 0;
+  position: relative;
+}
+
+/* line 7, D:/Assement NHP/scss/containers/_footer.scss */
+footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 11, D:/Assement NHP/scss/containers/_footer.scss */
+footer .footer-row .footer-menu {
+  flex: 100%;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  /* line 11, D:/Assement NHP/scss/containers/_footer.scss */
+  footer .footer-row .footer-menu {
+    flex: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 11, D:/Assement NHP/scss/containers/_footer.scss */
+  footer .footer-row .footer-menu {
+    flex: 25%;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 11, D:/Assement NHP/scss/containers/_footer.scss */
+  footer .footer-row .footer-menu {
+    margin-bottom: 40px;
+  }
+}
+
+/* line 27, D:/Assement NHP/scss/containers/_footer.scss */
+footer .footer-row .footer-menu h4 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 26px;
+}
+
+/*# sourceMappingURL=style.css.map */
