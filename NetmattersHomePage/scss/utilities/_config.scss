@@ -1,10 +1,14 @@
 // Variables
 // Colours
 $white: #fff;
-$darkteal: #324544;
+$grey: #666;
+$dark: #1b1b1e;
+$darker: #222431;
+$black: #000;
 
 //Break Points
-$small: 768px;
+$xsmall: 768px;
+$small: 770px;
 $medium: 992px;
 $large: 1260px;
 
@@ -18,8 +22,13 @@ $Poppins-L:  'Poppins Light';
 $Poppins-M: 'Poppins Medium';
 $Poppins-SB: 'Poppins SemiBold';
 $Poppins-T: 'Poppins Thin';
+$icomoon: 'icomoon';
 
 
 //Assest Paths
 $img-path: '../images';
 $font-path: '../fonts';
+
+//font sizes
+$pt: 0.88125rem;
+$spt: 0.8125rem;

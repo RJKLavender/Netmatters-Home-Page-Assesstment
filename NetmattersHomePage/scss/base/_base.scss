@@ -3,6 +3,7 @@ margin: 0;
 font-family: $Poppins-R,sans-serif;
 letter-spacing: .4px;
 
+
 }
 
 * {
@@ -16,11 +17,12 @@ box-sizing: border-box;
     padding-left: 15px;
     padding-right: 15px;
 
-    @media (min-width: $small) {
+    @media (min-width: $xsmall) {
         width: 750px;
     }
      @media (min-width: $medium) {
         width: 970px;
+
     }
      @media (min-width: $large) {
         width: 1200px;
@@ -29,6 +31,32 @@ box-sizing: border-box;
 
 }
 
+.container-bottom {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+        @media (max-width: $xsmall) {
+      margin:0; 
+    }
+        @media (min-width: $xsmall) {
+        width: 750px;
+    }
+     @media (min-width: $medium) {
+        width: 970px;
+
+    }
+     @media (min-width: $large) {
+        width: 1200px;
+    }
+}
+
+
+
 a {
     cursor: pointer;
+    color: $white;
 }
+
+
