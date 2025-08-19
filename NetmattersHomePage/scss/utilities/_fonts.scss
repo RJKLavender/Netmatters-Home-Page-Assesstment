@@ -1,13 +1,14 @@
 //Poppins font
-@include font-face('Poppins Black',Poppins-Black);
-@include font-face('Poppins Blod',Poppins-Blod);
-@include font-face('Poppins Extra Blod',Poppins-ExtraBlod);
-@include font-face('Poppins Extra Light',Poppins-ExtraLight);
-@include font-face('Poppins Light',Poppins-Light);
-@include font-face('Poppins Medium',Poppins-Medium);
-@include font-face('Poppins Regular',Poppins-Regular);
-@include font-face('Poppins Semi-Blod',Poppins-SemiBlod);
-@include font-face('Poppins Thin',Poppins-Thin);
+@include font-face('Poppins',Poppins-Black,900);
+@include font-face('Poppins',Poppins-Blod,700);
+@include font-face('Poppins',Poppins-ExtraBlod, 800);
+@include font-face('Poppins',Poppins-ExtraLight,200);
+@include font-face('Poppins',Poppins-Light,300);
+@include font-face('Poppins',Poppins-Medium, 500);
+@include font-face('Poppins',Poppins-Regular,400);
+@include font-face('Poppins',Poppins-SemiBlod, 600);
+@include font-face('Poppins',Poppins-Thin,100);
+
 
 //icomoon font
 @font-face {

@@ -1,6 +1,6 @@
 
 // Utilities
-@import "utilities/index";
+@import 'utilities/index';
 
 // Base Styles
 @import 'base/index';
@@ -9,7 +9,10 @@
 @import 'containers/index';
 
 // Layout Styles
-@import "layout/index";
+@import 'layout/index';
 
 // States
-@import "states/index";
+@import 'states/index';
+
+//All Middle Sections
+@import 'sections/index';

@@ -1,0 +1,50 @@
+nav {
+    background-color: $darkgrey;
+    display:block;
+
+    @media (max-width: $medium) {
+            display:none
+          }
+        } 
+ 
+
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin:0;
+        padding:0;
+        
+        li {
+            text-decoration: none;
+            text-align: center;
+            flex: 1;
+
+            a {
+                color: $white;
+                display:block;
+                font-size: $opt;
+                font-weight:300;
+                line-height:1;
+                padding-top:30px;
+                padding-bottom: 30px;
+                position:relative;
+                text-decoration:none;
+                text-transform:uppercase;
+                cursor: pointer;
+
+                 @media (min-width: $large) {
+                    font-size: $lpt;
+
+                    small {
+                        font-size: $mpt;
+                        font-weight: 600;
+                    }
+                }
+
+
+
+            }
+        }
+        
+    }

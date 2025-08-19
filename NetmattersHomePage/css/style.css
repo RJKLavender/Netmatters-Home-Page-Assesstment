@@ -1,46 +1,55 @@
 @font-face {
-  font-family: "Poppins Black";
+  font-family: "Poppins";
   src: url("font-path/Poppins-Black.ttf") format("truetype");
+  font-weight: 900;
 }
 
 @font-face {
-  font-family: "Poppins Blod";
+  font-family: "Poppins";
   src: url("font-path/Poppins-Blod.ttf") format("truetype");
+  font-weight: 700;
 }
 
 @font-face {
-  font-family: "Poppins Extra Blod";
+  font-family: "Poppins";
   src: url("font-path/Poppins-ExtraBlod.ttf") format("truetype");
+  font-weight: 800;
 }
 
 @font-face {
-  font-family: "Poppins Extra Light";
+  font-family: "Poppins";
   src: url("font-path/Poppins-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
 }
 
 @font-face {
-  font-family: "Poppins Light";
+  font-family: "Poppins";
   src: url("font-path/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: "Poppins Medium";
+  font-family: "Poppins";
   src: url("font-path/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
 }
 
 @font-face {
-  font-family: "Poppins Regular";
+  font-family: "Poppins";
   src: url("font-path/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: "Poppins Semi-Blod";
+  font-family: "Poppins";
   src: url("font-path/Poppins-SemiBlod.ttf") format("truetype");
+  font-weight: 600;
 }
 
 @font-face {
-  font-family: "Poppins Thin";
+  font-family: "Poppins";
   src: url("font-path/Poppins-Thin.ttf") format("truetype");
+  font-weight: 100;
 }
 
 @font-face {
@@ -52,7 +61,7 @@
   font-display: block;
 }
 
-/* line 26, D:/Assement NHP/scss/utilities/_fonts.scss */
+/* line 27, D:/Assement NHP/scss/utilities/_fonts.scss */
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon' !important;
   font-style: normal;
@@ -62,44 +71,47 @@
   line-height: 0.88125rem;
 }
 
-/* line 35, D:/Assement NHP/scss/utilities/_fonts.scss */
+/* line 36, D:/Assement NHP/scss/utilities/_fonts.scss */
 .icon-search::before {
   content: "\e986";
 }
 
-/* line 38, D:/Assement NHP/scss/utilities/_fonts.scss */
+/* line 39, D:/Assement NHP/scss/utilities/_fonts.scss */
 .icon-facebook::before {
   content: "\ea90";
 }
 
-/* line 41, D:/Assement NHP/scss/utilities/_fonts.scss */
+/* line 42, D:/Assement NHP/scss/utilities/_fonts.scss */
 .icon-instagram::before {
   content: "\ea92";
 }
 
-/* line 44, D:/Assement NHP/scss/utilities/_fonts.scss */
+/* line 45, D:/Assement NHP/scss/utilities/_fonts.scss */
 .icon-twitter::before {
   content: "\ea96";
 }
 
-/* line 47, D:/Assement NHP/scss/utilities/_fonts.scss */
+/* line 48, D:/Assement NHP/scss/utilities/_fonts.scss */
 .icon-linkedin::before {
   content: "\eaca";
 }
 
-/* line 1, D:/Assement NHP/scss/base/_base.scss */
+/* line 4, D:/Assement NHP/scss/base/_base.scss */
 body {
   margin: 0;
-  font-family: "Poppins Regular", sans-serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: .4px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
-/* line 9, D:/Assement NHP/scss/base/_base.scss */
+/* line 14, D:/Assement NHP/scss/base/_base.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 14, D:/Assement NHP/scss/base/_base.scss */
+/* line 21, D:/Assement NHP/scss/base/_base.scss */
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -108,27 +120,27 @@ body {
 }
 
 @media (min-width: 768px) {
-  /* line 14, D:/Assement NHP/scss/base/_base.scss */
+  /* line 21, D:/Assement NHP/scss/base/_base.scss */
   .container {
     width: 750px;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 14, D:/Assement NHP/scss/base/_base.scss */
+  /* line 21, D:/Assement NHP/scss/base/_base.scss */
   .container {
     width: 970px;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 14, D:/Assement NHP/scss/base/_base.scss */
+  /* line 21, D:/Assement NHP/scss/base/_base.scss */
   .container {
     width: 1200px;
   }
 }
 
-/* line 34, D:/Assement NHP/scss/base/_base.scss */
+/* line 41, D:/Assement NHP/scss/base/_base.scss */
 .container-bottom {
   margin-right: auto;
   margin-left: auto;
@@ -137,37 +149,184 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* line 34, D:/Assement NHP/scss/base/_base.scss */
+  /* line 41, D:/Assement NHP/scss/base/_base.scss */
   .container-bottom {
     margin: 0;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 34, D:/Assement NHP/scss/base/_base.scss */
+  /* line 41, D:/Assement NHP/scss/base/_base.scss */
   .container-bottom {
     width: 750px;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 34, D:/Assement NHP/scss/base/_base.scss */
+  /* line 41, D:/Assement NHP/scss/base/_base.scss */
   .container-bottom {
     width: 970px;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 34, D:/Assement NHP/scss/base/_base.scss */
+  /* line 41, D:/Assement NHP/scss/base/_base.scss */
   .container-bottom {
     width: 1200px;
   }
 }
 
-/* line 57, D:/Assement NHP/scss/base/_base.scss */
+/* line 64, D:/Assement NHP/scss/base/_base.scss */
 a {
   cursor: pointer;
   color: #fff;
+}
+
+/* line 1, D:/Assement NHP/scss/containers/_header.scss */
+header {
+  background-color: #222431;
+  color: #666;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* line 9, D:/Assement NHP/scss/containers/_header.scss */
+header .header-row {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 16, D:/Assement NHP/scss/containers/_header.scss */
+header .header-row .logo {
+  width: 320px;
+  height: 100px;
+}
+
+/* line 20, D:/Assement NHP/scss/containers/_header.scss */
+header .header-row .logo img {
+  margin-right: auto;
+  display: inline-block;
+  width: 320px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+/* line 31, D:/Assement NHP/scss/containers/_header.scss */
+header .header-row .header-menu {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  /* line 31, D:/Assement NHP/scss/containers/_header.scss */
+  header .header-row .header-menu {
+    display: none;
+  }
+}
+
+/* line 41, D:/Assement NHP/scss/containers/_header.scss */
+header .header-row .header-menu .menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 6px;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* line 51, D:/Assement NHP/scss/containers/_header.scss */
+header .header-row .header-menu .menu li {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-left: 30px;
+}
+
+/* line 56, D:/Assement NHP/scss/containers/_header.scss */
+header .header-row .header-menu .menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 60, D:/Assement NHP/scss/containers/_header.scss */
+header .header-row .header-menu .menu li a:hover {
+  text-decoration: underline;
+}
+
+/* line 68, D:/Assement NHP/scss/containers/_header.scss */
+header .contact {
+  display: flex;
+  padding: 7px 0;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* line 75, D:/Assement NHP/scss/containers/_header.scss */
+header .contact .search {
+  display: flex;
+  height: 41px;
+}
+
+/* line 80, D:/Assement NHP/scss/containers/_header.scss */
+header .contact .search label {
+  display: none;
+}
+
+/* line 83, D:/Assement NHP/scss/containers/_header.scss */
+header .contact .search .form {
+  background-color: rgba(52, 73, 94, 0.25);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 0.88125rem;
+  padding-left: 13px;
+  padding-right: 41px;
+  width: 200px;
+  cursor: text;
+}
+
+/* line 97, D:/Assement NHP/scss/containers/_header.scss */
+header .contact .button-support {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 41px;
+  width: 140px;
+  padding: 0 32px;
+  margin-left: 30px;
+  text-decoration: none;
+  background: linear-gradient(90deg, #70ddfd, #125f8f);
+  background-image: linear-gradient(45deg, #70ddfd, #125f8f);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* line 118, D:/Assement NHP/scss/containers/_header.scss */
+header .contact .button-contact {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 41px;
+  width: 140px;
+  padding: 0 32px;
+  margin-left: 30px;
+  text-decoration: none;
+  background: linear-gradient(90deg, #80308d, #350e5c);
+  background-image: linear-gradient(45deg, #80308d, #350e5c);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 /* line 1, D:/Assement NHP/scss/containers/_footer.scss */
@@ -176,7 +335,7 @@ footer {
   color: #fff;
   padding: 30px 0 0;
   position: relative;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* line 8, D:/Assement NHP/scss/containers/_footer.scss */
@@ -361,152 +520,143 @@ footer .footer-row .footer-menu ul li a:hover {
   text-decoration: underline;
 }
 
-/* line 1, D:/Assement NHP/scss/containers/_header.scss */
-header {
-  background-color: #222431;
-  color: #666;
-  padding: 30px 0 0;
-  position: relative;
-  font-size: 1rem;
-  font-weight: 300;
-}
-
-/* line 9, D:/Assement NHP/scss/containers/_header.scss */
-header .header-row {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* line 14, D:/Assement NHP/scss/containers/_header.scss */
-header .header-row .logo {
-  margin-bottom: 30px;
-  width: 320px;
-}
-
-/* line 18, D:/Assement NHP/scss/containers/_header.scss */
-header .header-row .logo img {
-  margin-right: auto;
-  display: inline-block;
-  width: 320px;
-  height: 65px;
-  vertical-align: middle;
-}
-
-/* line 29, D:/Assement NHP/scss/containers/_header.scss */
-header .header-row .header-menu {
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 30px;
-  flex: 100%;
+/* line 1, D:/Assement NHP/scss/containers/_nav.scss */
+nav {
+  background-color: #333645;
+  display: block;
 }
 
 @media (max-width: 992px) {
-  /* line 29, D:/Assement NHP/scss/containers/_header.scss */
-  header .header-row .header-menu {
+  /* line 1, D:/Assement NHP/scss/containers/_nav.scss */
+  nav {
     display: none;
   }
 }
 
-/* line 41, D:/Assement NHP/scss/containers/_header.scss */
-header .header-row .header-menu .menu {
+/* line 11, D:/Assement NHP/scss/containers/_nav.scss */
+.main-nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   list-style: none;
+  margin: 0;
   padding: 0;
-  margin-bottom: 6px;
-  list-style-type: none;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
-/* line 51, D:/Assement NHP/scss/containers/_header.scss */
-header .header-row .header-menu .menu li {
-  font-size: 0.8125rem;
-  line-height: 1.375rem;
-  margin-left: 30px;
-}
-
-/* line 56, D:/Assement NHP/scss/containers/_header.scss */
-header .header-row .header-menu .menu li a {
+/* line 18, D:/Assement NHP/scss/containers/_nav.scss */
+.main-nav li {
   text-decoration: none;
+  text-align: center;
+  flex: 1;
+}
+
+/* line 23, D:/Assement NHP/scss/containers/_nav.scss */
+.main-nav li a {
   color: #fff;
+  display: block;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-/* line 60, D:/Assement NHP/scss/containers/_header.scss */
-header .header-row .header-menu .menu li a:hover {
-  text-decoration: underline;
+@media (min-width: 1260px) {
+  /* line 23, D:/Assement NHP/scss/containers/_nav.scss */
+  .main-nav li a {
+    font-size: 1.125rem;
+  }
+  /* line 39, D:/Assement NHP/scss/containers/_nav.scss */
+  .main-nav li a small {
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
 }
 
-/* line 68, D:/Assement NHP/scss/containers/_header.scss */
-header .contact {
+/* line 1, D:/Assement NHP/scss/containers/_banner.scss */
+.banner {
   display: flex;
-  padding: 15px 0;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* line 75, D:/Assement NHP/scss/containers/_header.scss */
-header .contact .search {
-  display: flex;
-  height: 41px;
+/* line 6, D:/Assement NHP/scss/containers/_banner.scss */
+.banner .banner-image {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(95deg, rgba(128, 48, 141, 0.2) 0.76%, rgba(1, 72, 123, 0.2) 99.24%), linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(34, 36, 49, 0.72), rgba(34, 36, 49, 0.72)), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/home-YLei.png");
 }
 
-/* line 80, D:/Assement NHP/scss/containers/_header.scss */
-header .contact .search label {
-  display: none;
+/* line 14, D:/Assement NHP/scss/containers/_banner.scss */
+.banner .banner-image .content {
+  color: #fff;
+  padding: 200px 0 95px;
+  text-align: center;
 }
 
-/* line 83, D:/Assement NHP/scss/containers/_header.scss */
-header .contact .search .form {
-  background-color: rgba(52, 73, 94, 0.25);
+@media (min-width: 992px) {
+  /* line 14, D:/Assement NHP/scss/containers/_banner.scss */
+  .banner .banner-image .content {
+    padding-top: 95px;
+  }
+}
+
+/* line 23, D:/Assement NHP/scss/containers/_banner.scss */
+.banner .banner-image .content h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 3rem;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  /* line 23, D:/Assement NHP/scss/containers/_banner.scss */
+  .banner .banner-image .content h1 {
+    font-size: 5rem;
+    line-height: 5.6225rem;
+  }
+}
+
+/* line 35, D:/Assement NHP/scss/containers/_banner.scss */
+.banner .banner-image .content p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  padding-bottom: 6px;
+}
+
+@media (min-width: 992px) {
+  /* line 35, D:/Assement NHP/scss/containers/_banner.scss */
+  .banner .banner-image .content p {
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+  }
+}
+
+/* line 47, D:/Assement NHP/scss/containers/_banner.scss */
+.banner .banner-image .content .button-banner {
+  margin-bottom: 18px;
+  margin-top: 31px;
+  padding: 14px 32px;
+  font-size: 1.25rem;
+  line-height: 50px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+  text-transform: uppercase;
   border: 2px solid #fff;
   border-radius: 10px;
-  color: #fff;
-  font-size: 0.88125rem;
-  padding-left: 13px;
-  padding-right: 41px;
-  width: 200px;
-  cursor: text;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-/* line 97, D:/Assement NHP/scss/containers/_header.scss */
-header .contact .button-support {
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  height: 41px;
-  width: 140px;
-  padding: 0 32px;
-  margin-left: 30px;
-  text-decoration: none;
-  background: linear-gradient(90deg, #70ddfd, #125f8f);
-  background-image: linear-gradient(45deg, #70ddfd, #125f8f);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-/* line 118, D:/Assement NHP/scss/containers/_header.scss */
-header .contact .button-contact {
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  height: 41px;
-  width: 140px;
-  padding: 0 32px;
-  margin-left: 30px;
-  text-decoration: none;
-  background: linear-gradient(90deg, #80308d, #350e5c);
-  background-image: linear-gradient(45deg, #80308d, #350e5c);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+/* line 1, D:/Assement NHP/scss/containers/_middle.scss */
+.section {
+  padding-top: 75px;
+  padding-bottom: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

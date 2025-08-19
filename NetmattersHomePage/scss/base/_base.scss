@@ -1,8 +1,13 @@
+
+// Main Base Styles
+
 body {
 margin: 0;
-font-family: $Poppins-R,sans-serif;
+font-family: $Poppins,sans-serif;
 letter-spacing: .4px;
-
+font-size: 16px;
+line-height: 24px;
+font-weight: 400;
 
 }
 
@@ -11,6 +16,8 @@ box-sizing: border-box;
 
 }
 
+
+//Universal Containers
 .container {
     margin-right: auto;
     margin-left: auto;
@@ -53,10 +60,10 @@ box-sizing: border-box;
 }
 
 
-
+// Elements
 a {
     cursor: pointer;
     color: $white;
 }
 
-
+ 

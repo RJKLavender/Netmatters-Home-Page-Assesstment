@@ -1,25 +1,27 @@
 header { 
 background-color: $darker;
 color: $grey;
-padding: 30px 0 0;
+
 position: relative;
-font-size: 1rem;
-font-weight: 300;
+font-size: $opt;
+font-weight: 400;
 
 .header-row { 
 display:flex;
 justify-content: space-between;
+padding-top: 20px;
+padding-bottom: 20px;
 
     
       .logo {
-        margin-bottom:30px;
-              width: 320px;
+          width: 320px;
+          height: 100px;
 
         img {
           margin-right: auto;
           display:inline-block;
           width:320px;
-          height: 65px;
+          height: 100px;
           vertical-align: middle;
         }
       }
@@ -31,8 +33,6 @@ justify-content: space-between;
       align-items: flex-end;
       flex-direction: column; 
       width: 100%;
-      margin-bottom: 30px;
-     flex: 100%;
         
           @media (max-width: $medium) {
             display:none
@@ -67,7 +67,7 @@ justify-content: space-between;
     
           .contact{
             display:flex;
-            padding:15px 0;
+            padding:7px 0;
             flex-direction: row;
             justify-content: space-between;
               
@@ -85,7 +85,7 @@ justify-content: space-between;
                 border:2px solid $white;
                 border-radius:10px;
                 color: $white;
-                font-size:$pt;
+                font-size: $pt;
                 padding-left:13px;
                 padding-right:41px;
                 width:200px;
@@ -96,7 +96,7 @@ justify-content: space-between;
 
                .button-support {
               color: $white;
-              font-size: 1rem;
+              font-size: $opt;
               font-weight: 600;
               height: 41px;
               width: 140px;
@@ -117,7 +117,7 @@ justify-content: space-between;
               
               .button-contact {
               color: $white;
-              font-size: 1rem;
+              font-size: $opt;
               font-weight: 600;
               height: 41px;
               width: 140px;
@@ -135,13 +135,8 @@ justify-content: space-between;
               cursor: pointer;
               
               }
-                
-            
-
 
               }
-
-
 
             }
             

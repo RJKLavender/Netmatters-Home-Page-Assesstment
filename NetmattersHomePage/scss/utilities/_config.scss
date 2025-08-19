@@ -5,6 +5,7 @@ $grey: #666;
 $dark: #1b1b1e;
 $darker: #222431;
 $black: #000;
+$darkgrey: #333645;
 
 //Break Points
 $xsmall: 768px;
@@ -13,15 +14,15 @@ $medium: 992px;
 $large: 1260px;
 
 //Fonts
-$Poppins-R: 'Poppins Regular';
-$Poppins-B: 'Poppins Bold';
-$Poppins-EB: 'Poppins Extra Bold';
-$Poppins-Bl: 'Poppins Black';
-$Poppins-EL: 'Poppins Extra Light';
-$Poppins-L:  'Poppins Light';
-$Poppins-M: 'Poppins Medium';
-$Poppins-SB: 'Poppins SemiBold';
-$Poppins-T: 'Poppins Thin';
+$Poppins: 'Poppins';
+//$Poppins-B: 'Poppins Bold';
+//$Poppins-EB: 'Poppins Extra Bold';
+//$Poppins-Bl: 'Poppins Black';
+//$Poppins-EL: 'Poppins Extra Light';
+//$Poppins-L:  'Poppins Light';
+//$Poppins-M: 'Poppins Medium';
+//$Poppins-SB: 'Poppins SemiBold';
+//$Poppins-T: 'Poppins Thin';
 $icomoon: 'icomoon';
 
 
@@ -32,3 +33,6 @@ $font-path: '../fonts';
 //font sizes
 $pt: 0.88125rem;
 $spt: 0.8125rem;
+$opt: 1rem;
+$lpt: 1.125rem;
+$mpt: 0.875rem;

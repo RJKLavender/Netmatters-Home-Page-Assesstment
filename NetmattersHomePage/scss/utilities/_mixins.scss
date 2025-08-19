@@ -1,8 +1,10 @@
 // Web fonts
-@mixin font-face($family, $file)
+@mixin font-face($family, $file, $weight)
 {
     @font-face {
         font-family: $family;
         src: url('#{font-path}/#{$file}.ttf') format('truetype');
+        font-weight: $weight;
+        
     }
 }
