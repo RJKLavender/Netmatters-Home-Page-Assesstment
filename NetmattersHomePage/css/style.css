@@ -1,77 +1,76 @@
 @font-face {
   font-family: "Poppins";
-  src: url("font-path/Poppins-Black.ttf") format("truetype");
+  src: url("../fonts/Poppins-Black.ttf") format("truetype");
   font-weight: 900;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("font-path/Poppins-Blod.ttf") format("truetype");
+  src: url("../fonts/Poppins-Blod.ttf") format("truetype");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("font-path/Poppins-ExtraBlod.ttf") format("truetype");
+  src: url("../fonts/Poppins-ExtraBlod.ttf") format("truetype");
   font-weight: 800;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("font-path/Poppins-ExtraLight.ttf") format("truetype");
+  src: url("../fonts/Poppins-ExtraLight.ttf") format("truetype");
   font-weight: 200;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("font-path/Poppins-Light.ttf") format("truetype");
+  src: url("../fonts/Poppins-Light.ttf") format("truetype");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("font-path/Poppins-Medium.ttf") format("truetype");
+  src: url("../fonts/Poppins-Medium.ttf") format("truetype");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("font-path/Poppins-Regular.ttf") format("truetype");
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("font-path/Poppins-SemiBlod.ttf") format("truetype");
+  src: url("../fonts/Poppins-SemiBlod.ttf") format("truetype");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("font-path/Poppins-Thin.ttf") format("truetype");
+  src: url("../fonts/Poppins-Thin.ttf") format("truetype");
   font-weight: 100;
 }
 
 @font-face {
   font-family: 'icomoon';
-  src: url("https://i.icomoon.io/public/temp/95449f1c0a/UntitledProject/icomoon.eot?9uhhur");
-  src: url("https://i.icomoon.io/public/temp/95449f1c0a/UntitledProject/icomoon.eot?9uhhur#iefix") format("embedded-opentype"), url("https://i.icomoon.io/public/temp/95449f1c0a/UntitledProject/icomoon.ttf?9uhhur") format("truetype"), url("https://i.icomoon.io/public/temp/95449f1c0a/UntitledProject/icomoon.woff?9uhhur") format("woff"), url("https://i.icomoon.io/public/temp/95449f1c0a/UntitledProject/icomoon.svg?9uhhur#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot") format("embedded-opentype"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.svg") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-/* line 27, D:/Assement NHP/scss/utilities/_fonts.scss */
+/* line 26, D:/Assement NHP/scss/utilities/_fonts.scss */
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon' !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  line-height: 0.88125rem;
+  line-height: 1;
 }
 
-/* line 36, D:/Assement NHP/scss/utilities/_fonts.scss */
+/* line 35, D:/Assement NHP/scss/utilities/_fonts.scss */
 .icon-search::before {
   content: "\e986";
 }
@@ -81,17 +80,17 @@
   content: "\ea90";
 }
 
-/* line 42, D:/Assement NHP/scss/utilities/_fonts.scss */
+/* line 43, D:/Assement NHP/scss/utilities/_fonts.scss */
 .icon-instagram::before {
   content: "\ea92";
 }
 
-/* line 45, D:/Assement NHP/scss/utilities/_fonts.scss */
+/* line 47, D:/Assement NHP/scss/utilities/_fonts.scss */
 .icon-twitter::before {
   content: "\ea96";
 }
 
-/* line 48, D:/Assement NHP/scss/utilities/_fonts.scss */
+/* line 51, D:/Assement NHP/scss/utilities/_fonts.scss */
 .icon-linkedin::before {
   content: "\eaca";
 }
@@ -146,12 +145,14 @@ body {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  display: flex;
 }
 
 @media (max-width: 768px) {
   /* line 41, D:/Assement NHP/scss/base/_base.scss */
   .container-bottom {
     margin: 0;
+    flex-direction: column;
   }
 }
 
@@ -159,6 +160,8 @@ body {
   /* line 41, D:/Assement NHP/scss/base/_base.scss */
   .container-bottom {
     width: 750px;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -176,7 +179,7 @@ body {
   }
 }
 
-/* line 64, D:/Assement NHP/scss/base/_base.scss */
+/* line 69, D:/Assement NHP/scss/base/_base.scss */
 a {
   cursor: pointer;
   color: #fff;
@@ -449,31 +452,32 @@ footer .footer-row .footer-menu ul li a:hover {
 
 /* line 107, D:/Assement NHP/scss/containers/_footer.scss */
 .bottom {
-  display: flex;
-  font-size: 0.88125rem;
-  justify-content: space-between;
   background-color: #222431;
-  padding: 15px 0 0;
+  padding: 7.5px 0;
   width: 100%;
+  font-size: 0.88125rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* line 116, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 115, D:/Assement NHP/scss/containers/_footer.scss */
 .bottom .license {
-  color: #fff;
   width: 100%;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   padding-top: 5px;
+  color: #fff;
 }
 
 @media (min-width: 770px) {
-  /* line 116, D:/Assement NHP/scss/containers/_footer.scss */
+  /* line 115, D:/Assement NHP/scss/containers/_footer.scss */
   .bottom .license {
     display: flex;
     flex-direction: row;
+    padding-bottom: 5px;
   }
 }
 
-/* line 128, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 129, D:/Assement NHP/scss/containers/_footer.scss */
 .bottom .license ul {
   list-style: none;
   text-decoration: none;
@@ -483,18 +487,18 @@ footer .footer-row .footer-menu ul li a:hover {
 }
 
 @media (min-width: 768px) {
-  /* line 128, D:/Assement NHP/scss/containers/_footer.scss */
+  /* line 129, D:/Assement NHP/scss/containers/_footer.scss */
   .bottom .license ul {
     order: 2;
   }
 }
 
-/* line 140, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 141, D:/Assement NHP/scss/containers/_footer.scss */
 .bottom .license ul li {
   font-size: 0.8125rem;
 }
 
-/* line 143, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 144, D:/Assement NHP/scss/containers/_footer.scss */
 .bottom .license ul li::before {
   content: "-";
   display: inline-block;
@@ -503,21 +507,34 @@ footer .footer-row .footer-menu ul li a:hover {
 }
 
 @media (max-width: 768px) {
-  /* line 143, D:/Assement NHP/scss/containers/_footer.scss */
+  /* line 144, D:/Assement NHP/scss/containers/_footer.scss */
   .bottom .license ul li::before {
     display: none;
   }
 }
 
-/* line 155, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 156, D:/Assement NHP/scss/containers/_footer.scss */
 .bottom .license ul li a {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 159, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 160, D:/Assement NHP/scss/containers/_footer.scss */
 .bottom .license ul li a:hover {
   text-decoration: underline;
+}
+
+/* line 166, D:/Assement NHP/scss/containers/_footer.scss */
+.bottom .social {
+  display: flex;
+  gap: 35px;
+  color: #fff;
+  font-size: 1.1875rem;
+}
+
+/* line 172, D:/Assement NHP/scss/containers/_footer.scss */
+.bottom .social a {
+  text-decoration: none;
 }
 
 /* line 1, D:/Assement NHP/scss/containers/_nav.scss */
@@ -657,6 +674,289 @@ nav {
 .section {
   padding-top: 75px;
   padding-bottom: 0px;
+}
+
+/* line 4, D:/Assement NHP/scss/layout/_buttons.scss */
+.button-CD {
+  background: #fff;
+  border: 4px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #80308d, #350e5c) border-box;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+/* line 13, D:/Assement NHP/scss/layout/_buttons.scss */
+.button-IT {
+  background: #fff;
+  border: 4px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #70ddfd, #125f8f) border-box;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+/* line 22, D:/Assement NHP/scss/layout/_buttons.scss */
+.button-DM {
+  background: #fff;
+  border: 4px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #7bcbac, #198e92) border-box;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+/* line 31, D:/Assement NHP/scss/layout/_buttons.scss */
+.button-TS {
+  background: #fff;
+  border: 4px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #930148, #30013a) border-box;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+/* line 40, D:/Assement NHP/scss/layout/_buttons.scss */
+.button-WD {
+  background: #fff;
+  border: 4px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #80308d, #350e5c) border-box;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+/* line 49, D:/Assement NHP/scss/layout/_buttons.scss */
+.button-CS {
+  background: #fff;
+  border: 4px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #5991d5, #4a1c8c) border-box;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+/* line 58, D:/Assement NHP/scss/layout/_buttons.scss */
+.button-DT {
+  background: #fff;
+  border: 4px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #80308d, #350e5c) border-box;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+/* line 4, D:/Assement NHP/scss/layout/_panels.scss */
+.panel-CD {
+  background: #fff;
+  border: 4px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(180deg, #80308d, #350e5c) border-box;
+  border-radius: 50px;
+  opacity: 1;
+}
+
+/* line 13, D:/Assement NHP/scss/layout/_panels.scss */
+.panel-IT {
+  background: #fff;
+  border: 4px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(180deg, #70ddfd, #125f8f) border-box;
+  border-radius: 50px;
+  opacity: 1;
+}
+
+/* line 22, D:/Assement NHP/scss/layout/_panels.scss */
+.panel-DM {
+  background: #fff;
+  border: 4px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(180deg, #7bcbac, #198e92) border-box;
+  border-radius: 50px;
+  opacity: 1;
+}
+
+/* line 31, D:/Assement NHP/scss/layout/_panels.scss */
+.panel-TS {
+  background: #fff;
+  border: 4px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(180deg, #930148, #30013a) border-box;
+  border-radius: 50px;
+  opacity: 1;
+}
+
+/* line 40, D:/Assement NHP/scss/layout/_panels.scss */
+.panel-WD {
+  background: #fff;
+  border: 4px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(180deg, #80308d, #350e5c) border-box;
+  border-radius: 50px;
+  opacity: 1;
+}
+
+/* line 49, D:/Assement NHP/scss/layout/_panels.scss */
+.panel-CS {
+  background: #fff;
+  border: 4px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(180deg, #5991d5, #4a1c8c) border-box;
+  border-radius: 50px;
+  opacity: 1;
+}
+
+/* line 58, D:/Assement NHP/scss/layout/_panels.scss */
+.panel-DT {
+  background: #fff;
+  border: 4px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(180deg, #80308d, #350e5c) border-box;
+  border-radius: 50px;
+  opacity: 1;
+}
+
+/* line 4, D:/Assement NHP/scss/sections/_services.scss */
+.services-list .services-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  max-width: 100%;
+}
+
+/* line 12, D:/Assement NHP/scss/sections/_services.scss */
+.services-list .services-row .services-header {
+  width: 100%;
+}
+
+/* line 16, D:/Assement NHP/scss/sections/_services.scss */
+.services-list .services-row .services-header h2 {
+  font-weight: 600;
+  font-size: 2.813rem;
+  margin-top: -10px;
+  color: #333645;
+  margin-bottom: 0px;
+}
+
+/* line 27, D:/Assement NHP/scss/sections/_services.scss */
+.services-list .services-row .services-panneltop {
+  cursor: pointer;
+  display: flex;
+  padding: 0 15px;
+}
+
+@media (min-width: 992px) {
+  /* line 27, D:/Assement NHP/scss/sections/_services.scss */
+  .services-list .services-row .services-panneltop {
+    width: calc(1/3 * 100%);
+  }
+}
+
+/* line 38, D:/Assement NHP/scss/sections/_services.scss */
+.services-list .services-row .services-panneltop a {
+  padding: 54px 44px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 30px);
+  margin-top: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #333645;
+  width: 100%;
+  position: relative;
+}
+
+/* line 51, D:/Assement NHP/scss/sections/_services.scss */
+.services-list .services-row .services-panneltop a .wsbr {
+  word-spacing: 0px;
+}
+
+/* line 55, D:/Assement NHP/scss/sections/_services.scss */
+.services-list .services-row .services-panneltop a h2 {
+  word-spacing: 100vw;
+  font-size: 2rem;
+  font-weight: 900;
+  margin: -5px -25px 0;
+  padding-bottom: 35px;
+  line-height: 1.2;
+}
+
+/* line 65, D:/Assement NHP/scss/sections/_services.scss */
+.services-list .services-row .services-panneltop a p {
+  margin-bottom: 43px;
+  font-size: .8125rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+/* line 73, D:/Assement NHP/scss/sections/_services.scss */
+.services-list .services-row .services-panneltop a .button-container {
+  margin-top: auto;
+  display: block;
+}
+
+/* line 79, D:/Assement NHP/scss/sections/_services.scss */
+.services-list .services-row .services-panneltop a .button-container span {
+  color: #333645;
+  font-size: 1.063rem;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 18px;
+  text-transform: uppercase;
+  display: inline-flex;
+}
+
+/* line 93, D:/Assement NHP/scss/sections/_services.scss */
+.services-list .services-row .services-pannelbottom {
+  cursor: pointer;
+  display: flex;
+  padding: 0 15px;
+}
+
+@media (min-width: 992px) {
+  /* line 93, D:/Assement NHP/scss/sections/_services.scss */
+  .services-list .services-row .services-pannelbottom {
+    width: calc(1/4 * 100%);
+  }
+}
+
+/* line 104, D:/Assement NHP/scss/sections/_services.scss */
+.services-list .services-row .services-pannelbottom a {
+  color: #333645;
+  padding: 54px 44px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 30px);
+  margin-top: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #333645;
+  width: 100%;
+  position: relative;
+}
+
+/* line 116, D:/Assement NHP/scss/sections/_services.scss */
+.services-list .services-row .services-pannelbottom a h2 {
+  word-spacing: 100vw;
+  font-size: 2rem;
+  font-weight: 900;
+  margin: -5px -25px 0;
+  padding-bottom: 35px;
+  line-height: 1.2;
+}
+
+/* line 126, D:/Assement NHP/scss/sections/_services.scss */
+.services-list .services-row .services-pannelbottom a p {
+  margin-bottom: 43px;
+  font-size: .8125rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+/* line 134, D:/Assement NHP/scss/sections/_services.scss */
+.services-list .services-row .services-pannelbottom a .button-container {
+  margin-top: auto;
+  display: block;
+}
+
+/* line 138, D:/Assement NHP/scss/sections/_services.scss */
+.services-list .services-row .services-pannelbottom a .button-container span {
+  color: #333645;
+  font-size: 1.063rem;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 18px;
+  text-transform: uppercase;
+  display: inline-flex;
 }
 
 /*# sourceMappingURL=style.css.map */
