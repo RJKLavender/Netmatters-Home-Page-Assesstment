@@ -95,11 +95,21 @@
   content: "\eaca";
 }
 
+/* line 55, D:/Assement NHP/scss/utilities/_fonts.scss */
+.icon-star-full:before {
+  content: "\e9d9";
+}
+
+/* line 58, D:/Assement NHP/scss/utilities/_fonts.scss */
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
+
 /* line 4, D:/Assement NHP/scss/base/_base.scss */
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -274,27 +284,45 @@ header .contact {
 header .contact .search {
   display: flex;
   height: 41px;
+  border: 1.6px solid #fff;
+  border-radius: 10px;
 }
 
-/* line 80, D:/Assement NHP/scss/containers/_header.scss */
+/* line 82, D:/Assement NHP/scss/containers/_header.scss */
 header .contact .search label {
   display: none;
 }
 
-/* line 83, D:/Assement NHP/scss/containers/_header.scss */
+/* line 86, D:/Assement NHP/scss/containers/_header.scss */
 header .contact .search .form {
   background-color: rgba(52, 73, 94, 0.25);
-  border: 2px solid #fff;
-  border-radius: 10px;
   color: #fff;
-  font-size: 0.88125rem;
+  font-size: 0.875rem;
   padding-left: 13px;
   padding-right: 41px;
   width: 200px;
   cursor: text;
+  border: none;
 }
 
 /* line 97, D:/Assement NHP/scss/containers/_header.scss */
+header .contact .search .search-submit {
+  border: none;
+  align-items: center;
+  background: none;
+  justify-content: center;
+  width: 41px;
+  cursor: pointer;
+  background-color: rgba(52, 73, 94, 0.25);
+}
+
+/* line 106, D:/Assement NHP/scss/containers/_header.scss */
+header .contact .search .search-submit span {
+  font-size: 1.375rem;
+  color: #fff;
+}
+
+/* line 114, D:/Assement NHP/scss/containers/_header.scss */
 header .contact .button-support {
   color: #fff;
   font-size: 1rem;
@@ -304,8 +332,9 @@ header .contact .button-support {
   padding: 0 32px;
   margin-left: 30px;
   text-decoration: none;
-  background: linear-gradient(90deg, #70ddfd, #125f8f);
-  background-image: linear-gradient(45deg, #70ddfd, #125f8f);
+  text-transform: uppercase;
+  border: 4px solid transparent;
+  background: linear-gradient(#222431, #222431) padding-box, linear-gradient(90deg, #70ddfd, #125f8f) border-box;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -313,7 +342,7 @@ header .contact .button-support {
   cursor: pointer;
 }
 
-/* line 118, D:/Assement NHP/scss/containers/_header.scss */
+/* line 137, D:/Assement NHP/scss/containers/_header.scss */
 header .contact .button-contact {
   color: #fff;
   font-size: 1rem;
@@ -323,7 +352,8 @@ header .contact .button-contact {
   padding: 0 32px;
   margin-left: 30px;
   text-decoration: none;
-  background: linear-gradient(90deg, #80308d, #350e5c);
+  text-transform: uppercase;
+  background: linear-gradient(90deg #80308d, #350e5c);
   background-image: linear-gradient(45deg, #80308d, #350e5c);
   border-radius: 10px;
   display: flex;
@@ -369,13 +399,13 @@ footer .footer-row .footer-company-info {
   }
 }
 
-/* line 30, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 28, D:/Assement NHP/scss/containers/_footer.scss */
 footer .footer-row .footer-company-info .logo {
   margin-bottom: 30px;
   width: 320px;
 }
 
-/* line 34, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 32, D:/Assement NHP/scss/containers/_footer.scss */
 footer .footer-row .footer-company-info .logo img {
   margin-right: auto;
   display: inline-block;
@@ -384,40 +414,40 @@ footer .footer-row .footer-company-info .logo img {
   vertical-align: middle;
 }
 
-/* line 43, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 41, D:/Assement NHP/scss/containers/_footer.scss */
 footer .footer-row .footer-company-info .footer-hours strong {
   font-weight: 600;
 }
 
-/* line 51, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 49, D:/Assement NHP/scss/containers/_footer.scss */
 footer .footer-row .footer-menu {
   flex: 100%;
   margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
-  /* line 51, D:/Assement NHP/scss/containers/_footer.scss */
+  /* line 49, D:/Assement NHP/scss/containers/_footer.scss */
   footer .footer-row .footer-menu {
     flex: 50%;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 51, D:/Assement NHP/scss/containers/_footer.scss */
+  /* line 49, D:/Assement NHP/scss/containers/_footer.scss */
   footer .footer-row .footer-menu {
     flex: 25%;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 51, D:/Assement NHP/scss/containers/_footer.scss */
+  /* line 49, D:/Assement NHP/scss/containers/_footer.scss */
   footer .footer-row .footer-menu {
     flex: 10%;
     margin-bottom: 40px;
   }
 }
 
-/* line 74, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 72, D:/Assement NHP/scss/containers/_footer.scss */
 footer .footer-row .footer-menu h4 {
   text-transform: uppercase;
   font-size: 1rem;
@@ -425,7 +455,7 @@ footer .footer-row .footer-menu h4 {
   font-weight: 600;
 }
 
-/* line 81, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 79, D:/Assement NHP/scss/containers/_footer.scss */
 footer .footer-row .footer-menu ul {
   list-style: none;
   display: block;
@@ -433,34 +463,34 @@ footer .footer-row .footer-menu ul {
   list-style-type: none;
 }
 
-/* line 87, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 85, D:/Assement NHP/scss/containers/_footer.scss */
 footer .footer-row .footer-menu ul li {
   font-size: 0.8125rem;
   line-height: 1.375rem;
 }
 
-/* line 92, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 90, D:/Assement NHP/scss/containers/_footer.scss */
 footer .footer-row .footer-menu ul li a {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 97, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 95, D:/Assement NHP/scss/containers/_footer.scss */
 footer .footer-row .footer-menu ul li a:hover {
   text-decoration: underline;
 }
 
-/* line 107, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 105, D:/Assement NHP/scss/containers/_footer.scss */
 .bottom {
   background-color: #222431;
   padding: 7.5px 0;
   width: 100%;
-  font-size: 0.88125rem;
+  font-size: 0.875rem;
   display: flex;
   justify-content: space-between;
 }
 
-/* line 115, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 113, D:/Assement NHP/scss/containers/_footer.scss */
 .bottom .license {
   width: 100%;
   padding-bottom: 10px;
@@ -468,8 +498,8 @@ footer .footer-row .footer-menu ul li a:hover {
   color: #fff;
 }
 
-@media (min-width: 770px) {
-  /* line 115, D:/Assement NHP/scss/containers/_footer.scss */
+@media (min-width: 768px) {
+  /* line 113, D:/Assement NHP/scss/containers/_footer.scss */
   .bottom .license {
     display: flex;
     flex-direction: row;
@@ -477,7 +507,7 @@ footer .footer-row .footer-menu ul li a:hover {
   }
 }
 
-/* line 129, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 127, D:/Assement NHP/scss/containers/_footer.scss */
 .bottom .license ul {
   list-style: none;
   text-decoration: none;
@@ -487,18 +517,18 @@ footer .footer-row .footer-menu ul li a:hover {
 }
 
 @media (min-width: 768px) {
-  /* line 129, D:/Assement NHP/scss/containers/_footer.scss */
+  /* line 127, D:/Assement NHP/scss/containers/_footer.scss */
   .bottom .license ul {
     order: 2;
   }
 }
 
-/* line 141, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 139, D:/Assement NHP/scss/containers/_footer.scss */
 .bottom .license ul li {
   font-size: 0.8125rem;
 }
 
-/* line 144, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 142, D:/Assement NHP/scss/containers/_footer.scss */
 .bottom .license ul li::before {
   content: "-";
   display: inline-block;
@@ -507,24 +537,24 @@ footer .footer-row .footer-menu ul li a:hover {
 }
 
 @media (max-width: 768px) {
-  /* line 144, D:/Assement NHP/scss/containers/_footer.scss */
+  /* line 142, D:/Assement NHP/scss/containers/_footer.scss */
   .bottom .license ul li::before {
     display: none;
   }
 }
 
-/* line 156, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 154, D:/Assement NHP/scss/containers/_footer.scss */
 .bottom .license ul li a {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 160, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 158, D:/Assement NHP/scss/containers/_footer.scss */
 .bottom .license ul li a:hover {
   text-decoration: underline;
 }
 
-/* line 166, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 164, D:/Assement NHP/scss/containers/_footer.scss */
 .bottom .social {
   display: flex;
   gap: 35px;
@@ -532,7 +562,7 @@ footer .footer-row .footer-menu ul li a:hover {
   font-size: 1.1875rem;
 }
 
-/* line 172, D:/Assement NHP/scss/containers/_footer.scss */
+/* line 170, D:/Assement NHP/scss/containers/_footer.scss */
 .bottom .social a {
   text-decoration: none;
 }
@@ -607,7 +637,7 @@ nav {
   background-image: linear-gradient(95deg, rgba(128, 48, 141, 0.2) 0.76%, rgba(1, 72, 123, 0.2) 99.24%), linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(34, 36, 49, 0.72), rgba(34, 36, 49, 0.72)), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/home-YLei.png");
 }
 
-/* line 14, D:/Assement NHP/scss/containers/_banner.scss */
+/* line 15, D:/Assement NHP/scss/containers/_banner.scss */
 .banner .banner-image .content {
   color: #fff;
   padding: 200px 0 95px;
@@ -615,29 +645,29 @@ nav {
 }
 
 @media (min-width: 992px) {
-  /* line 14, D:/Assement NHP/scss/containers/_banner.scss */
+  /* line 15, D:/Assement NHP/scss/containers/_banner.scss */
   .banner .banner-image .content {
     padding-top: 95px;
   }
 }
 
-/* line 23, D:/Assement NHP/scss/containers/_banner.scss */
+/* line 24, D:/Assement NHP/scss/containers/_banner.scss */
 .banner .banner-image .content h1 {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-weight: 900;
-  line-height: 3rem;
+  line-height: 3.375rem;
   padding-bottom: 20px;
 }
 
 @media (min-width: 992px) {
-  /* line 23, D:/Assement NHP/scss/containers/_banner.scss */
+  /* line 24, D:/Assement NHP/scss/containers/_banner.scss */
   .banner .banner-image .content h1 {
     font-size: 5rem;
-    line-height: 5.6225rem;
+    line-height: 5.625rem;
   }
 }
 
-/* line 35, D:/Assement NHP/scss/containers/_banner.scss */
+/* line 36, D:/Assement NHP/scss/containers/_banner.scss */
 .banner .banner-image .content p {
   font-size: 1.25rem;
   font-weight: 600;
@@ -646,20 +676,20 @@ nav {
 }
 
 @media (min-width: 992px) {
-  /* line 35, D:/Assement NHP/scss/containers/_banner.scss */
+  /* line 36, D:/Assement NHP/scss/containers/_banner.scss */
   .banner .banner-image .content p {
     font-size: 1.625rem;
-    line-height: 2.5rem;
+    line-height: 2.75rem;
   }
 }
 
-/* line 47, D:/Assement NHP/scss/containers/_banner.scss */
+/* line 48, D:/Assement NHP/scss/containers/_banner.scss */
 .banner .banner-image .content .button-banner {
   margin-bottom: 18px;
   margin-top: 31px;
   padding: 14px 32px;
   font-size: 1.25rem;
-  line-height: 50px;
+  line-height: 3.125rem;
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
   font-weight: 600;
@@ -671,9 +701,15 @@ nav {
 }
 
 /* line 1, D:/Assement NHP/scss/containers/_middle.scss */
-.section {
+.section1 {
   padding-top: 75px;
   padding-bottom: 0px;
+}
+
+/* line 8, D:/Assement NHP/scss/containers/_middle.scss */
+.section2 {
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 /* line 4, D:/Assement NHP/scss/layout/_buttons.scss */
@@ -739,7 +775,7 @@ nav {
   opacity: 1;
 }
 
-/* line 4, D:/Assement NHP/scss/layout/_panels.scss */
+/* line 2, D:/Assement NHP/scss/layout/_panels.scss */
 .panel-CD {
   background: #fff;
   border: 4px solid transparent;
@@ -748,7 +784,7 @@ nav {
   opacity: 1;
 }
 
-/* line 13, D:/Assement NHP/scss/layout/_panels.scss */
+/* line 11, D:/Assement NHP/scss/layout/_panels.scss */
 .panel-IT {
   background: #fff;
   border: 4px solid transparent;
@@ -757,7 +793,7 @@ nav {
   opacity: 1;
 }
 
-/* line 22, D:/Assement NHP/scss/layout/_panels.scss */
+/* line 20, D:/Assement NHP/scss/layout/_panels.scss */
 .panel-DM {
   background: #fff;
   border: 4px solid transparent;
@@ -766,7 +802,7 @@ nav {
   opacity: 1;
 }
 
-/* line 31, D:/Assement NHP/scss/layout/_panels.scss */
+/* line 29, D:/Assement NHP/scss/layout/_panels.scss */
 .panel-TS {
   background: #fff;
   border: 4px solid transparent;
@@ -775,7 +811,7 @@ nav {
   opacity: 1;
 }
 
-/* line 40, D:/Assement NHP/scss/layout/_panels.scss */
+/* line 38, D:/Assement NHP/scss/layout/_panels.scss */
 .panel-WD {
   background: #fff;
   border: 4px solid transparent;
@@ -784,7 +820,7 @@ nav {
   opacity: 1;
 }
 
-/* line 49, D:/Assement NHP/scss/layout/_panels.scss */
+/* line 47, D:/Assement NHP/scss/layout/_panels.scss */
 .panel-CS {
   background: #fff;
   border: 4px solid transparent;
@@ -793,7 +829,7 @@ nav {
   opacity: 1;
 }
 
-/* line 58, D:/Assement NHP/scss/layout/_panels.scss */
+/* line 56, D:/Assement NHP/scss/layout/_panels.scss */
 .panel-DT {
   background: #fff;
   border: 4px solid transparent;
@@ -819,7 +855,7 @@ nav {
 /* line 16, D:/Assement NHP/scss/sections/_services.scss */
 .services-list .services-row .services-header h2 {
   font-weight: 600;
-  font-size: 2.813rem;
+  font-size: 2.8125rem;
   margin-top: -10px;
   color: #333645;
   margin-bottom: 0px;
@@ -871,7 +907,7 @@ nav {
 /* line 65, D:/Assement NHP/scss/sections/_services.scss */
 .services-list .services-row .services-panneltop a p {
   margin-bottom: 43px;
-  font-size: .8125rem;
+  font-size: 0.8125rem;
   font-weight: 400;
   line-height: 1.375rem;
 }
@@ -885,7 +921,7 @@ nav {
 /* line 79, D:/Assement NHP/scss/sections/_services.scss */
 .services-list .services-row .services-panneltop a .button-container span {
   color: #333645;
-  font-size: 1.063rem;
+  font-size: 1.0625rem;
   font-weight: 600;
   align-items: center;
   justify-content: center;
@@ -908,7 +944,7 @@ nav {
   }
 }
 
-/* line 104, D:/Assement NHP/scss/sections/_services.scss */
+/* line 103, D:/Assement NHP/scss/sections/_services.scss */
 .services-list .services-row .services-pannelbottom a {
   color: #333645;
   padding: 54px 44px;
@@ -923,7 +959,7 @@ nav {
   position: relative;
 }
 
-/* line 116, D:/Assement NHP/scss/sections/_services.scss */
+/* line 115, D:/Assement NHP/scss/sections/_services.scss */
 .services-list .services-row .services-pannelbottom a h2 {
   word-spacing: 100vw;
   font-size: 2rem;
@@ -933,30 +969,111 @@ nav {
   line-height: 1.2;
 }
 
-/* line 126, D:/Assement NHP/scss/sections/_services.scss */
+/* line 125, D:/Assement NHP/scss/sections/_services.scss */
 .services-list .services-row .services-pannelbottom a p {
   margin-bottom: 43px;
-  font-size: .8125rem;
+  font-size: 0.8125rem;
   font-weight: 400;
   line-height: 1.375rem;
 }
 
-/* line 134, D:/Assement NHP/scss/sections/_services.scss */
+/* line 133, D:/Assement NHP/scss/sections/_services.scss */
 .services-list .services-row .services-pannelbottom a .button-container {
   margin-top: auto;
   display: block;
 }
 
-/* line 138, D:/Assement NHP/scss/sections/_services.scss */
+/* line 137, D:/Assement NHP/scss/sections/_services.scss */
 .services-list .services-row .services-pannelbottom a .button-container span {
   color: #333645;
-  font-size: 1.063rem;
+  font-size: 1.0625rem;
   font-weight: 600;
   align-items: center;
   justify-content: center;
   padding: 11px 18px;
   text-transform: uppercase;
   display: inline-flex;
+}
+
+/* line 1, D:/Assement NHP/scss/sections/_aboutus.scss */
+.about-us {
+  background-image: linear-gradient(97deg, #350e5c -1.17%, #80308d 129.98%);
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media (min-with: 992px) {
+  /* line 1, D:/Assement NHP/scss/sections/_aboutus.scss */
+  .about-us {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 1, D:/Assement NHP/scss/sections/_aboutus.scss */
+  .about-us {
+    background-image: url(../images/branded.png), linear-gradient(97deg, #350e5c -1.17%, #80308d 129.98%);
+    text-align: left;
+  }
+}
+
+/* line 22, D:/Assement NHP/scss/sections/_aboutus.scss */
+.about-us .about-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  max-width: 100%;
+}
+
+/* line 29, D:/Assement NHP/scss/sections/_aboutus.scss */
+.about-us .about-row .about-info {
+  padding: 0 15px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  /* line 29, D:/Assement NHP/scss/sections/_aboutus.scss */
+  .about-us .about-row .about-info {
+    width: 50%;
+  }
+}
+
+/* line 41, D:/Assement NHP/scss/sections/_aboutus.scss */
+.about-us .about-row .about-info h2 {
+  margin-bottom: 40px;
+  margin-top: -6px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+/* line 50, D:/Assement NHP/scss/sections/_aboutus.scss */
+.about-us .about-row .about-info p {
+  line-height: 1.875rem;
+  margin-bottom: 25px;
+  margin-top: 0;
+  color: #fff;
+}
+
+/* line 56, D:/Assement NHP/scss/sections/_aboutus.scss */
+.about-us .about-row .about-info p strong {
+  font-weight: 600;
+}
+
+/* line 61, D:/Assement NHP/scss/sections/_aboutus.scss */
+.about-us .about-row .about-info p a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* line 66, D:/Assement NHP/scss/sections/_aboutus.scss */
+.about-us .about-row .about-info p a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

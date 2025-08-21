@@ -1,15 +1,27 @@
 // Variables
+
 // Colours
 $white: #fff;
 $grey: #666;
+$black: #000;
 $dark: #1b1b1e;
 $darker: #222431;
-$black: #000;
 $darkgrey: #333645;
 
+//Colours for graidents
+$pink: #80308d;
+$purple: #350e5c;
+$sky: #70ddfd;
+$blue: #125f8f;
+$lightteal: #7bcbac;
+$teal: #198e92;
+$rose: #930148;
+$darkpurple: #30013a;
+$ocean: #5991d5;
+$violet: #4a1c8c;
+
 //Break Points
-$xsmall: 768px;
-$small: 770px;
+$small: 768px;
 $medium: 992px;
 $large: 1260px;
 
@@ -17,14 +29,21 @@ $large: 1260px;
 $Poppins: 'Poppins';
 $icomoon: 'icomoon';
 
-
 //Assest Paths
 $img-path: '../images';
 $font-path: '../fonts';
 
-//font sizes
-$pt: 0.88125rem;
-$spt: 0.8125rem;
-$opt: 1rem;
-$lpt: 1.125rem;
-$mpt: 0.875rem;
+//font
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+//font weights
+$font-thin: 100;
+$font-extralight: 200;
+$font-light: 300;
+$font-reg: 400;
+$font-med: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extrabold: 800;
+$font-black: 900;

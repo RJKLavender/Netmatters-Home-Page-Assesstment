@@ -23,9 +23,9 @@ nav {
             a {
                 color: $white;
                 display:block;
-                font-size: $opt;
-                font-weight:300;
-                line-height:1;
+                font-size: rem(16px);
+                font-weight: $font-light;
+                line-height: 1;
                 padding-top:30px;
                 padding-bottom: 30px;
                 position:relative;
@@ -34,11 +34,11 @@ nav {
                 cursor: pointer;
 
                  @media (min-width: $large) {
-                    font-size: $lpt;
+                    font-size: rem(18px);
 
                     small {
-                        font-size: $mpt;
-                        font-weight: 600;
+                        font-size: rem(14px);
+                        font-weight: $font-semibold;
                     }
                 }
 

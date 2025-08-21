@@ -4,10 +4,10 @@
 body {
 margin: 0;
 font-family: $Poppins,sans-serif;
-letter-spacing: .4px;
-font-size: 16px;
-line-height: 1.5;
-font-weight: 400;
+letter-spacing: 0.4px;
+font-size: $base-font-size;
+line-height: ($base-line-height/$base-font-size);
+font-weight: $font-reg;
 
 }
 
@@ -24,7 +24,7 @@ box-sizing: border-box;
     padding-left: 15px;
     padding-right: 15px;
 
-    @media (min-width: $xsmall) {
+    @media (min-width: $small) {
         width: 750px;
     }
      @media (min-width: $medium) {
@@ -45,12 +45,12 @@ box-sizing: border-box;
     padding-right: 15px;
     display:flex;
 
-        @media (max-width: $xsmall) {
+        @media (max-width: $small) {
       margin:0; 
       flex-direction: column;
       
     }
-        @media (min-width: $xsmall) {
+        @media (min-width: $small) {
         width: 750px;
          justify-content: space-between;
          align-items: center;
@@ -70,7 +70,6 @@ a {
     cursor: pointer;
     color: $white;
 }
-
 
 
  
