@@ -26,6 +26,7 @@
             font-weight: $font-black;
             line-height: rem(54px);
             padding-bottom: 20px;
+            margin:0;
 
              @media (min-width: $medium) {
             font-size: rem(80px);

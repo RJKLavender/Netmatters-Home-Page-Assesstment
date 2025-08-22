@@ -27,7 +27,7 @@
 			<div class="contact">
 				<form class="search" method="GET" action="#" accept-charset="UTF-8">
 					<label class="s1" for="search-input" >Search:</label>
-					<input id="search-input" class="form" placeholder="Search..." name="keyword" type="text">
+					<input id="search-input" class="form-search" placeholder="Search..." name="keyword" type="text">
 					<button id="search-submit" class="search-submit" type="submit">
 						<span class="icon-search" aria-hidden="true"></span>
 					</button>
@@ -46,13 +46,13 @@
 <nav>
 	<div class="container">
 		<ul class="main-nav">
-			<li><a href="#"><small>AI</small><br> Consultancy</a></li>
-			<li><a href="#"><small>Consultancy</small><br> & Development</a></li>
-			<li><a href="#"><small>IT</small><br> Support</a></li>
-			<li><a href="#"><small>Digital</small><br> Marketing</a></li>
-			<li><a href="#"><small>Telecoms</small><br> Services</a></li>
-			<li><a href="#"><small>Web</small><br> Design</a></li>
-			<li><a href="#"><small>Developer</small><br> Course</a></li>
+			<li><a href="#" class="AIC"><small>AI</small><br> Consultancy</a></li>
+			<li><a href="#" class="CD"><small>Consultancy</small><br> & Development</a></li>
+			<li><a href="#" class="ITS"><small>IT</small><br> Support</a></li>
+			<li><a href="#" class="DM"><small>Digital</small><br> Marketing</a></li>
+			<li><a href="#" class="TS"><small>Telecoms</small><br> Services</a></li>
+			<li><a href="#" class="WD"><small>Web</small><br> Design</a></li>
+			<li><a href="#" class="DC"><small>Developer</small><br> Course</a></li>
 		</ul>
 	</div>
 </nav>
@@ -267,10 +267,10 @@
 
 				<div class="about-buttons"> 
 					<a class="button-about" href="#">
-						Why Choos Us?<em class="icon-arrow-right2"></em>
+						Why Choos Us? <em class="icon-arrow-right2"></em>
 					</a>
 					<a class="button-about"> 
-						Our Culture<em class="icon-arrow-right2"></em>
+						Our Culture <em class="icon-arrow-right2"></em>
 					</a>
 
 				</div>
@@ -329,7 +329,83 @@
 </div>
 
 <div class="contact-us">
+<div class="container">
+	<div class="contact-row">
+	<div class="contact-title">
+	<h2> Let's Discuss Your Project</h2>
+	<p>Connect with us, and we'll call to find out how we can help!</p>
 
+	</div>
+	<div class="contact-form-container">
+		<div class="contact-image-box">
+			<img class="contact-img" alt="Let's Discuss Your Project" src="images/contact-us.jpg">
+		</div>
+		<div class="contact-form-box">
+			<h3>Get In Touch</h3>
+
+			<form class="form-contact" id="contact-form" method="POST" action="#" accept-charset="UTF-8">
+				<div class="form-row">
+					<div class="form-field">
+					<label class="required" for="name">Your Name</label>
+					<input id="name" name="name" class="form-text" type="text">
+				</div>
+					<div class="form-field">
+					<label class="required" for="company">Company Name</label>
+					<input id="company" name="company" class="form-text" type="text">
+				</div>
+					<div class="form-field">
+					<label class="required" for="email">Your Email</label>
+					<input id="email" name="email" class="form-text" type="email">
+				</div>
+					<div class="form-field">
+					<label class="required" for="telephone">Your Telephone Number</label>
+					<input id="telephone" name="telephone" class="form-text" type="text">
+				</div>
+				</div>
+				<div class="form-field">
+					<label class="required" for="messege">Messege</label>
+					<textarea id="messege" name="messege" cols="50" rows="10"
+					class="form-textarea"></textarea>
+				</div>
+				<div class="form-field">
+					<label class="checkbox-marketing">
+						<span class="checkbox-flex">
+							<span class="checkbox-left">
+								<span class="checkbox">
+									<span class="ticked"></span>
+									<input class="marketing-checkbox" name="marketing_prefernce" type="checkbox" value="1">
+								</span>
+
+							</span>
+							<span class="checkbox-label">
+							Please tick this box if you wish to receive marketing information from us. 
+							Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe. 
+							</span>
+
+						</span>
+					</label>
+				</div>
+				<div class="form-field">
+					<p class="recaption-text"> 
+						This site is protected by reCAPTCHA and the Google  <a href="#"><u>Privacy Policy</u></a> and <a><u>Terms of Service apply</u></a>.
+					</p>
+				</div>
+				<div class="submit-row">
+					<button class="form-submit" type="submit"></button>
+					<small>
+						<span></span>
+					</small>
+				</div>
+									
+
+			</div>
+
+		</div>
+
+	</div>
+
+	</div>
+</div>
 </div>
 
 </div>

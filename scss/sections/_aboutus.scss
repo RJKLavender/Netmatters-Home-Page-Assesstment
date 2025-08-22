@@ -48,6 +48,7 @@ background-image: linear-gradient(97deg,#350e5c -1.17%,#80308d 129.98%);
                 }
 
                 p{
+                    font-size: rem(16px);
                     line-height: rem(30px);
                     margin-bottom: 25px;
                     margin-top: 0;
@@ -70,33 +71,71 @@ background-image: linear-gradient(97deg,#350e5c -1.17%,#80308d 129.98%);
                 
 
 				.about-buttons {
-                    
-                    .button-about {
-                        em{
-
-                        }
+                    display:flex;
+                    gap: 10px;
+                    flex-direction: row;
+                    height:57px;
 
                     }
 				
                 .star-rating {
+                    justify-content: center;
+                    display: flex;
+                    font-size: rem(34px);
+                    gap: 14px;
+                    margin-bottom: 35px;
+                    flex-direction: row;
+
+                    @media (min-width: $medium  ) {
+                    justify-content: flex-start;
+                    }
                 
                 }
 
 				.quote {
-
+                    font-size: rem(21px);
+                    font-style: $font-italic;
+                    font-weight: $font-reg;
                 }
                 .quote-author {
 
+                    font-size: rem(12px);
+                    font-weight: $font-reg;
+
                 }
 								
-				.review-buttons  
-                {
-                    em {
-
-                    }
+				.review-buttons {
+                     display:flex;
+                    gap: 10px;
+                    flex-direction: row;
+                    height:57px;
+                    margin-top: 75      px;
 
                 }
             }
         }
     }
-}
+
+    // about us button styling
+    .button-about {
+                        Display:inline-flex;
+                        border-radius: 10px;
+                        border: 2px solid $white;
+                        cursor: pointer;
+                        color: $white;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-size: rem(16px);
+                        font-weight: $font-semibold;
+                        line-height: rem(25px);
+                        justify-content: center;
+                        align-items: center;
+                        padding: 11px 18px;
+                        height:57px;
+
+
+                        em{
+                            padding-left: 15px;
+
+                        }
+                    }
