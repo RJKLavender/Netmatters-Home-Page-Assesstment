@@ -62,12 +62,14 @@
   content: "\eaca";
 
 }
-.icon-star-full:before {
+.icon-star-full::before {
   content: "\e9d9";
 }
-.icon-arrow-right2:before {
+.icon-arrow-right2::before {
   content: "\ea3c";
 }
 
-
+.icon-checkmark::before {
+  content: "\ea10";
+}
 

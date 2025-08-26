@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-Black.ttf") format("truetype");
@@ -159,13 +160,18 @@
 }
 
 /* line 65, D:/Assement NHP/scss/utilities/_fonts.scss */
-.icon-star-full:before {
+.icon-star-full::before {
   content: "\e9d9";
 }
 
 /* line 68, D:/Assement NHP/scss/utilities/_fonts.scss */
-.icon-arrow-right2:before {
+.icon-arrow-right2::before {
   content: "\ea3c";
+}
+
+/* line 72, D:/Assement NHP/scss/utilities/_fonts.scss */
+.icon-checkmark::before {
+  content: "\ea10";
 }
 
 /* line 4, D:/Assement NHP/scss/base/_base.scss */
@@ -1251,6 +1257,217 @@ nav {
 /* line 137, D:/Assement NHP/scss/sections/_aboutus.scss */
 .button-about em {
   padding-left: 15px;
+}
+
+/* line 1, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us {
+  background-color: #1b1b1e;
+  padding: 66px 0 75px;
+  color: #fff;
+}
+
+/* line 8, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-title {
+  text-align: center;
+}
+
+/* line 11, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-title h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 2.875rem;
+  margin-bottom: 15px;
+}
+
+/* line 20, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-title p {
+  font-size: 1.625rem;
+  font-weight: 300;
+  line-height: 2.25rem;
+  margin-bottom: 30px;
+}
+
+/* line 29, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-form-container {
+  margin: 0 -55px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+}
+
+/* line 36, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-form-container .contact-image-box {
+  padding: 0 55px;
+  max-width: 100%;
+}
+
+@media (min-width: 1260px) {
+  /* line 36, D:/Assement NHP/scss/sections/_contactus.scss */
+  .contact-us .contact-row .contact-form-container .contact-image-box {
+    width: 50%;
+  }
+}
+
+/* line 43, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-form-container .contact-image-box img {
+  border-radius: 30px 150px 30px 30px;
+  height: auto;
+  max-width: 100%;
+}
+
+/* line 51, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-form-container .contact-form-box {
+  padding: 0 55px;
+  max-width: 100%;
+}
+
+@media (min-width: 1260px) {
+  /* line 51, D:/Assement NHP/scss/sections/_contactus.scss */
+  .contact-us .contact-row .contact-form-container .contact-form-box {
+    width: 50%;
+  }
+}
+
+/* line 58, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-form-container .contact-form-box h3 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 2.875rem;
+  margin-bottom: 15px;
+}
+
+/* line 67, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-form-container .contact-form-box .form-contact .form-field {
+  max-width: 100%;
+  padding: 0 15px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media (min-width: 1260px) {
+  /* line 67, D:/Assement NHP/scss/sections/_contactus.scss */
+  .contact-us .contact-row .contact-form-container .contact-form-box .form-contact .form-field {
+    width: 50%;
+  }
+}
+
+/* line 81, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-form-container .contact-form-box .form-contact .form-field .form-text {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid transparent;
+  border-bottom-color: #ccc;
+  color: #fff;
+  height: 47px;
+  width: 100%;
+  padding: 5px 15px;
+  cursor: text;
+}
+
+/* line 103, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-form-container .contact-form-box .form-contact .form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+/* line 110, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-form-container .contact-form-box .form-contact .required {
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+/* line 118, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-form-container .contact-form-box .form-contact .required::after {
+  color: #d24d57;
+  content: " *";
+}
+
+/* line 123, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-form-container .contact-form-box .form-contact .recaption {
+  max-width: 100%;
+  font-size: 0.625rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1260px) {
+  /* line 123, D:/Assement NHP/scss/sections/_contactus.scss */
+  .contact-us .contact-row .contact-form-container .contact-form-box .form-contact .recaption {
+    width: 50%;
+  }
+}
+
+/* line 136, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-form-container .contact-form-box .form-contact .recaption .recaption-text a {
+  text-decoration: underline;
+}
+
+/* line 145, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-form-container .contact-form-box .form-contact .form-fieldfull {
+  max-width: 100%;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* line 153, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-form-container .contact-form-box .form-contact .form-fieldfull .form-textarea {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid transparent;
+  border-bottom-color: #ccc;
+  color: #fff;
+  height: 100px;
+  min-height: 100px;
+  width: 100%;
+  padding: 5px 15px;
+  cursor: text;
+}
+
+/* line 167, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-form-container .contact-form-box .form-contact .form-fieldfull .checkbox-marketing {
+  font-size: 0.625rem;
+  line-height: 0.875rem;
+  font-weight: £font-semibold;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* line 174, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-form-container .contact-form-box .form-contact .form-fieldfull .checkbox-marketing .checkbox-flex {
+  display: flex;
+}
+
+/* line 177, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-form-container .contact-form-box .form-contact .form-fieldfull .checkbox-marketing .checkbox-flex .checkbox-left {
+  padding-right: 0;
+}
+
+/* line 180, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-form-container .contact-form-box .form-contact .form-fieldfull .checkbox-marketing .checkbox-flex .checkbox-left .checkbox {
+  border: 3px solid #fff;
+  height: 20px;
+  margin-right: 15px;
+  width: 20px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+/* line 188, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-form-container .contact-form-box .form-contact .form-fieldfull .checkbox-marketing .checkbox-flex .checkbox-left .checkbox .ticked {
+  display: none;
+  font-weight: 400;
+}
+
+/* line 193, D:/Assement NHP/scss/sections/_contactus.scss */
+.contact-us .contact-row .contact-form-container .contact-form-box .form-contact .form-fieldfull .checkbox-marketing .checkbox-flex .checkbox-left .checkbox .marketing-checkbox {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
